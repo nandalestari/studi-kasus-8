@@ -21,4 +21,14 @@ float Matriks::baris(){
     cout << "Rata-rata Kelulusan pertahun dari prodi " << ratarata1 << "  "<< endl;
     }
 }
+float Matriks::kolom(){
+  for(int i=0; i<3; i++){
+    for(int j=0; j<3; j++){
+      jumlah = jumlah+a[j][i];
+      ratarata2 = jumlah/3;
+    }
+    jumlah =0;
+     cout << "Rata-rata pertahun prodi " << ratarata2 << "  "<< endl;
+  }
+}
 
