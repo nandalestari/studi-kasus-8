@@ -31,4 +31,23 @@ float Matriks::kolom(){
      cout << "Rata-rata pertahun prodi " << ratarata2 << "  "<< endl;
   }
 }
+float Matriks::output(){
+    cout << " PRODI | KOMPUTER | ELEKTRO | RATA-RATA SEMUA PRODI |\n";
+    cout << "|_|_|_|___|\n"; 
+    for(int i=0; i<3; i++){
+  	  for (int j=0; j<3; j++){
+  		  cout << a[i][j] << "          ";
+	    }
+	    cout << endl;
+    }
+  }
+int main(){
+  Matriks Kita;
+  Kita.output();
+  cout << endl;
+  Kita.baris();
+  cout << endl;
+  Kita.kolom();
+  cout << endl;
+}
 
